@@ -1,0 +1,54 @@
+@use "sass:color";
+
+.button{
+    $primary-color: #00113a;
+    $primary-color1: lighten(#00113a, 30%);
+    color: $primary-color1; 
+    // border: 1px solid color.scale($primary-color, $primary-color1: 20%);
+}
+
+// @function calc-percent($target, $container){
+//     @return ($target / $container) * 100%;
+// }
+// // 빈번하게 사용한다면 단축함수를 사용한다.
+// // vscode인 경우는 필요없음.
+// @function cp($target, $container){
+//     @return calc-percent($target, $container);
+// }
+
+// .my-module {
+//     width: calc-percent(650px, 1000px);
+// }
+
+// .my-module {
+//     height: calc-percent(100px, 500px);
+// }
+
+// @mixin large-text($size) {
+//     font-size: $size;
+//     font-weight: bold;
+//     font-family: sans-serif;
+//     color: orange;
+// }
+
+// h1 {
+//     @include large-text(120px);
+// } 
+
+// .container {
+//     .child {
+//         color: blue;
+//     }
+//     @at-root .sibling {
+//         color: gray;
+//     }
+// }
+
+// .container {
+//     .child {
+//         color: blue;
+//     }
+// }
+// .sibling {
+//     color: gray;
+// }
